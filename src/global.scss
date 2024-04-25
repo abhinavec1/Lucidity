@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+.g-10 {
+  gap: 10px !important;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.inventory-main {
+  .widget-main {
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+  }
+}
+
+.header-main {
+  border-bottom: 1px solid grey;
+
+  .user-role-main {
+    padding: 1rem .5rem;
+  }
+}
