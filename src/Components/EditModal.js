@@ -6,7 +6,7 @@ const EditModal = ({ showPopup, setShowPopup, editItemCallback, item}) => {
   const [editForm] = Form.useForm()
 
   useEffect(() => {
-      const itemPrice = parseInt(item?.value?.split('$')?.[1])
+      const itemPrice = parseInt(item?.price?.split('$')?.[1])
       const itemValue = parseInt(item?.value?.split('$')?.[1])
       editForm.setFieldsValue({
           category: item?.category,
