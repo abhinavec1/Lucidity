@@ -22,6 +22,7 @@ const HomePage = ({totalProducts, totalStoreValue, outOfStock, categoryCount, it
 
     useEffect(() => {
         getInventoryData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     async function getInventoryData() {
