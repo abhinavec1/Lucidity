@@ -24,7 +24,7 @@ const HomePage = ({totalProducts, totalStoreValue, outOfStock, categoryCount, it
         getInventoryData()
     }, [])
 
-    const getInventoryData = async () => {
+    async function getInventoryData() {
         setIsDataLoading(true)
         try {
             const response = await API_MANAGER.getInventoryData()

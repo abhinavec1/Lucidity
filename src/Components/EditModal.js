@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react";
-import { Button, Col, Form, Input, Modal, Row, message, } from "antd";
+import React, {useEffect} from "react";
+import { Button, Col, Form, Input, Modal, Row} from "antd";
 
 const EditModal = ({ showPopup, setShowPopup, editItemCallback, item}) => {
 
@@ -14,7 +14,7 @@ const EditModal = ({ showPopup, setShowPopup, editItemCallback, item}) => {
           quantity: item?.quantity,
           value: itemValue || null
       })
-  }, [item, showPopup])
+  }, [item, showPopup, editForm])
 
   const submitForm = (values) => {
     const parsedValues = {

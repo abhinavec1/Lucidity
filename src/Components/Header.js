@@ -1,5 +1,4 @@
 import {connect} from "react-redux";
-import {useEffect} from "react";
 import {Switch} from "antd";
 
 const Header = ({userRole, updateUserRole}) => {
